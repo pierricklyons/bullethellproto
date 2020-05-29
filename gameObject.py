@@ -1,11 +1,15 @@
 class GameObject:
 
-    def __init__(self, game, sprite, hitRadius, x, y):
+    MOVEMENT_SPEED = 250
+    HIT_RADIUS = 10
+
+    def __init__(self, game, sprite, hitRadius, movementSpeed, x, y):
         self.game = game
         self.sprite = sprite
         self.width = sprite.width 
         self.height = sprite.height
         self.hitRadius = hitRadius
+        self.movementSpeed = movementSpeed
         self.x = x
         self.y = y 
 

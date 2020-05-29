@@ -9,7 +9,7 @@ class Game(arcade.Window):
     
     def __init__(self, width, height):
         super().__init__(width, height)
-        self.player = Player(self, width/2, height/2)
+        self.player = Player(self,"peppa.png", 10, 250, width/2, height/2)
         self.width = width
         self.height = height
         self.playerBullets = []

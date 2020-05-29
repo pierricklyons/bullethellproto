@@ -9,7 +9,7 @@ class PlayerBullet(GameObject):
 
     def __init__(self, game, x, y):
         sprite = arcade.Sprite(PlayerBullet.SPRITE_FILENAME, scale = 0.2)
-        super().__init__(game, sprite, PlayerBullet.HIT_RADIUS, x, y)
-
+        super().__init__(game, sprite, PlayerBullet.HIT_RADIUS, PlayerBullet.MOVEMENT_SPEED, x, y)
+        
     def move(self, timeDelta):
         self.y += PlayerBullet.MOVEMENT_SPEED * timeDelta    
